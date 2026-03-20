@@ -22,3 +22,40 @@ header div a {
     font-weight: bold;
     color: violet;
 }
+ul li{
+    list-style: none;
+    margin-left: 15px;
+}
+ul{
+    display: flex;
+}
+ul li a{
+    text-decoration: none;
+    color:grey;
+    font-weight: 600;
+    font-size: 1.1rem;
+    position: relative;
+    padding: 10px;
+}
+ul li a:hover{
+    color: violet;
+}
+ul li a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background-color: violet;
+    transition: width 0.3s ease;
+}
+ul li a:hover::after{
+    width: 100%;
+}
+a.active{
+    color: violet;
+}
+a.active::after{
+    width: 100%;
+}
