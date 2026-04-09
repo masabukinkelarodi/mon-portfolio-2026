@@ -1,8 +1,23 @@
+
+
+
+
+
+
 h1{
-    color: red;
+    color: var(--violet-doux);
+    :root {
+    --violet-doux: #6C63ff;
+    --violet-fonce:#534EDD;
+    --orange-vif: #ffa736;
+    --gris-tres-fonce: #333;
+    --gris-fonce: #666;
+    --gris-tres-clair: #f8f8f8;
+    --gris-clair: #eee;}
+
 }
 body{
-    background-color: gray;
+    background-color: var(--gris-clair);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 1.6;
 }
@@ -20,7 +35,7 @@ header{
 header div a {
     text-decoration: none;
     font-weight: bold;
-    color: violet;
+    color: var(--violet-doux);
 }
 ul li{
     list-style: none;
@@ -31,14 +46,14 @@ ul{
 }
 ul li a{
     text-decoration: none;
-    color:grey;
+    color:var(--gris-fonce);
     font-weight: 600;
     font-size: 1.1rem;
     position: relative;
     padding: 10px;
 }
 ul li a:hover{
-    color: violet;
+    color: var(--violet-doux);
 }
 ul li a::after{
     content: '';
@@ -47,14 +62,14 @@ ul li a::after{
     bottom: 0;
     height: 3px;
     width: 0;
-    background-color: violet;
+    background-color: var(--violet-doux);
     transition: width 0.3s ease;
 }
 ul li a:hover::after{
     width: 100%;
 }
 a.active{
-    color: violet;
+    color: var(--violet-doux);
 }
 a.active::after{
     width: 100%;
@@ -73,22 +88,22 @@ a.active::after{
     height: 300PX;
     object-fit: cover;
     border-radius: 50%;
-    border: 8px solid violet;
+    border: 8px solid var(--violet-doux);
 }
 .hero h1{
-    color: violet;
+    color: var(--violet-doux);
     font-size: 4rem;
     margin-bottom: 1.2rem;
 }
 .hero p{
-    color: gris;
+    color: var(--gris-fonce);
     font-size: 1.2rem;
     margin-bottom: 1.2rem;
 }
 .hero a{
     text-decoration: none;
     display: inline-block;
-    background-color: violet;
+    background-color: var(--violet-doux);
     color: white;
     padding: 15px 30Px;
     border-radius: 50px;
@@ -99,7 +114,7 @@ a.active::after{
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 .hero a:hover{
-    background-color: violet;
+    background-color: var(--violet-doux);
     transform: translateY(-3px);
 }
 .apropos{
@@ -108,7 +123,7 @@ a.active::after{
     text-align: center;
 }
 .apropos h2{
-    color: violet;
+    color: var(--violet-doux);
     font-size: 2.6rem;
     font-weight: 700;
     position: relative;
@@ -118,17 +133,17 @@ a.active::after{
     display: block;
     width: 60px;
     height: 4px;
-    background-color: violet;
+    background-color: var(--violet-doux);
     margin: 1.2rem auto;
     border-radius: 2px;
 }
 .apropos p{
     margin-bottom: 2rem;
-    color: gray;
+    color: var(--gris-clair);
     font-size: 1.3rem;
 }
 section h2 {
-    color: violet;
+    color: var(--violet-doux);
     font-size: 2.6rem;
     font-weight: 700;
     position:relative;
@@ -139,7 +154,7 @@ section h2::after {
     display: block;
     width: 60px;
     height: 4px;
-    background-color: violet;
+    background-color: var(--violet-doux);
     margin: 1.2rem auto;
     border-radius: 2px;
 }
@@ -157,12 +172,12 @@ section h2::after {
     padding: 15px;
 }
 .competences table thead{
-    background-color: violet ;
+    background-color: var(--violet-doux) ;
     color: white;
     text-transform: uppercase;
 }
 .competences table tbody td{
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid var(--gris-clair);
 }
 .competences table tbody tr:nth-child(even){
     background-color: white;
@@ -172,7 +187,7 @@ section h2::after {
 }
 footer{
     margin: 3rem;
-    background-color: violet;
+    background-color: var(--violet-doux);
     padding: 0;
     text-align: center;
 }
@@ -188,6 +203,118 @@ footer a{
     transition: color 0.3s ease, transform 0.2s ease;
 }
 footer a:hover{
-    color: orange;
+    color: var(--orange-vif);
     transform: translate(-3px);
+} 
+/* Styles pour la page Contact */
+.contact-container {
+    max-width: 1000px;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 3rem;
+    padding: 0 2rem;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h1 {
+    color: var(--violet-doux);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.info-item {
+    font-size: 1.5rem;
+    color: white;
+    margin: 1.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-apps {
+    margin-top: 2rem;
+}
+
+.social-apps a {
+    text-decoration: none;
+    color: white;
+    background-color: #25D366; /* Couleur WhatsApp */
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    transition: opacity 0.3s;
+}
+
+.social-apps a:last-child {
+    background-color: #0088cc; /* Couleur Telegram */
+}
+
+.social-apps a:hover {
+    opacity: 0.8;
+}
+
+.contact-form {
+    flex: 1;
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--gris-clair);
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline-color: var(--violet-doux);
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: var(--violet-doux);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: var(--violet-doux);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        margin: 2rem auto;
+    }
+    .contact-info h1 {
+        text-align: center;
+    }
 }

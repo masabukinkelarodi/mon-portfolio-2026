@@ -18,18 +18,47 @@
         <nav>
             <ul>
                 <li><a href="index.html">acceuil</a></li>
-                <li><a href="projet.html"class="active">projet</a></li>
+                <li><a href="projet.html">projet</a></li>
                 <li><a href="passion.html">passion</a></li>
                 <li><a href="divertissements.html">divertissement</a></li>
-                <li><a href="contact.html">contact</a></li>
+                <li><a href="contact.html"class="active">contact</a></li>
             </ul>
         </nav>
     </header>
 </body>
 <main>
-    <h1>
-        contactez nous
-    </h1>
+<section class="contact-info">
+        <h1>Contactez-nous</h1>
+        <p>Basé à <strong>Lubumbashi</strong>, je suis disponible pour vos projets.</p>
+        
+        <div class="info-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>+243 990 903 458</span>
+        </div>
+        
+        <div class="social-apps">
+            <a href="https://wa.me/243990903458" target="_blank" title="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="https://t.me/+243990903458" target="_blank" title="Telegram">
+                <i class="fa-brands fa-telegram"></i> Telegram
+            </a>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <form action="#">
+            <div class="form-group">
+                <label for="name">Nom complet</label>
+                <input type="text" id="name" name="name" placeholder="Votre nom" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Téléphone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Votre numéro" required>
+            </div>
+            <button type="submit" class="btn-submit">Envoyer</button>
+        </form>
+    </section>
 </main>
 
 
