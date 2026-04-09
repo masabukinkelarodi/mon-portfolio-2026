@@ -1,11 +1,5 @@
-
-
-
-
-
-
 h1{
-    color: var(--violet-doux);
+    color: red;
     :root {
     --violet-doux: #6C63ff;
     --violet-fonce:#534EDD;
@@ -114,7 +108,7 @@ a.active::after{
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 .hero a:hover{
-    background-color: var(--violet-doux);
+    background-color: var(--violet-fonce);
     transform: translateY(-3px);
 }
 .apropos{
@@ -139,7 +133,7 @@ a.active::after{
 }
 .apropos p{
     margin-bottom: 2rem;
-    color: var(--gris-clair);
+    color: var(--gris-fonce);
     font-size: 1.3rem;
 }
 section h2 {
