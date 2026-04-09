@@ -60,7 +60,7 @@ a.active::after{
     width: 100%;
 }
 
-.Hero{
+.hero{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,24 +68,24 @@ a.active::after{
     text-align: center;
     margin: 10rem 2rem;
 }
-.Hero img {
+.hero img {
     width: 300PX;
     height: 300PX;
     object-fit: cover;
     border-radius: 50%;
     border: 8px solid violet;
 }
-.Hero h1{
+.hero h1{
     color: violet;
     font-size: 4rem;
     margin-bottom: 1.2rem;
 }
-.Hero p{
+.hero p{
     color: gris;
     font-size: 1.2rem;
     margin-bottom: 1.2rem;
 }
-.Hero a{
+.hero a{
     text-decoration: none;
     display: inline-block;
     background-color: violet;
@@ -98,7 +98,7 @@ a.active::after{
     margin-top: 1rem;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
-.Hero a:hover{
+.hero a:hover{
     background-color: violet;
     transform: translateY(-3px);
 }
