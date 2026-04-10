@@ -1,6 +1,4 @@
-h1{
-    color: red;
-    :root {
+:root {
     --violet-doux: #6C63ff;
     --violet-fonce:#534EDD;
     --orange-vif: #ffa736;
@@ -9,6 +7,9 @@ h1{
     --gris-tres-clair: #f8f8f8;
     --gris-clair: #eee;}
 
+h1{
+    color: red;
+    
 }
 body{
     background-color: var(--gris-clair);
@@ -77,9 +78,9 @@ a.active::after{
     text-align: center;
     margin: 10rem 2rem;
 }
-.hero img {
-    width: 300PX;
-    height: 300PX;
+#banner-img {
+    width: 300px;
+    height: 300px;
     object-fit: cover;
     border-radius: 50%;
     border: 8px solid var(--violet-doux);
@@ -107,6 +108,12 @@ a.active::after{
     margin-top: 1rem;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
+.logo{
+    font-size: 40px;
+
+}
+
 .hero a:hover{
     background-color: var(--violet-fonce);
     transform: translateY(-3px);
@@ -125,7 +132,7 @@ a.active::after{
 .apropos h2::after{
     content: '';
     display: block;
-    width: 60px;
+    width: 300px;
     height: 4px;
     background-color: var(--violet-doux);
     margin: 1.2rem auto;
@@ -146,7 +153,7 @@ section h2 {
 section h2::after {
     content: '';
     display: block;
-    width: 60px;
+    width: 300px;
     height: 4px;
     background-color: var(--violet-doux);
     margin: 1.2rem auto;
@@ -375,7 +382,7 @@ footer a:hover{
     display: block;
     width: 50%;
     height: 4px;
-    background-color: var(--orange-vif);
+    background-color: var(--violet-doux);
     margin: 0.5rem auto 0;
     border-radius: 2px;
 }
@@ -388,7 +395,7 @@ footer a:hover{
     margin-bottom: 5rem;
 }
 
-.divertissement-titre {
+.divertissement-titre, .realisation-title {
     color: var(--violet-doux);
     font-size: 3rem;
     margin-bottom: 3rem;
@@ -399,9 +406,9 @@ footer a:hover{
 .divertissement-titre::after {
     content: '';
     display: block;
-    width: 60px;
+    width: 300px;
     height: 4px;
-    background-color: var(--orange-vif);
+    background-color: var(--violet-doux);
     margin: 0.5rem auto 0;
     border-radius: 2px;
 }
