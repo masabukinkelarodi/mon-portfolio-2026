@@ -312,3 +312,251 @@ footer a:hover{
         text-align: center;
     }
 }
+/* Styles spécifiques pour la page Passion */
+.passions-section {
+    padding: 4rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro-text {
+    color: var(--gris-fonce);
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+.passions-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 5rem;
+}
+
+.passions-table thead {
+    background-color: var(--violet-doux);
+    color: white;
+}
+
+.passions-table th, .passions-table td {
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid var(--gris-clair);
+}
+
+.passions-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.passions-table tbody tr:hover {
+    background-color: #f1f0ff;
+    transition: background-color 0.3s ease;
+}
+
+.passions-table td strong {
+    color: var(--violet-fonce);
+    font-size: 1.1rem;
+}
+
+/* Harmonisation du titre h1 pour cette section */
+.passions-section h1 {
+    color: var(--violet-doux);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+.passions-section h1::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 4px;
+    background-color: var(--orange-vif);
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+}
+/* Styles spécifiques pour la page Divertissement */
+.divertissement-section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.divertissement-titre {
+    color: var(--violet-doux);
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    position: relative;
+    display: inline-block;
+}
+
+.divertissement-titre::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--orange-vif);
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+}
+
+.divertissement-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.divertissement-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.divertissement-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(108, 99, 255, 0.1);
+    border-color: var(--gris-clair);
+}
+
+.divertissement-icon {
+    font-size: 4rem;
+    color: var(--violet-doux);
+    margin-bottom: 1.5rem;
+}
+
+.divertissement-card h3 {
+    font-size: 1.5rem;
+    color: var(--gris-tres-fonce);
+    margin: 0;
+    text-transform: capitalize;
+}
+
+/* Responsive pour mobile */
+@media (max-width: 600px) {
+    .divertissement-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+    
+    .divertissement-icon {
+        font-size: 3rem;
+    }
+    
+    .divertissement-card h3 {
+        font-size: 1.2rem;
+    }
+}
+/* --- Page Projets : Grille de réalisations --- */
+
+#realisations {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes de taille égale */
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+#projet {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden; /* Pour que l'image respecte l'arrondi du bloc */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.5rem;
+    border: 1px solid var(--gris-clair);
+}
+
+#projet:hover {
+    transform: translateY(-10px);
+}
+
+#projet img {
+    width: 100%; /* L'image prend toute la largeur du bloc */
+    height: 200px;
+    object-fit: cover;
+}
+
+#projet h3 {
+    color: var(--violet-doux);
+    margin: 1.5rem 1rem 0.5rem;
+    font-size: 1.4rem;
+}
+
+#projet p {
+    color: var(--gris-fonce);
+    padding: 0 1rem;
+    font-size: 0.95rem;
+    flex-grow: 1; /* Aligne le bas des cartes même si le texte est court */
+}
+
+/* Style des badges (Stack) */
+#stack {
+    display: flex;
+    gap: 8px;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+#stack a {
+    text-decoration: none;
+    background-color: #f1f0ff;
+    color: var(--violet-doux);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    pointer-events: none; /* Les badges ne sont pas forcément cliquables ici */
+}
+
+/* Liens d'action (Code / Démo) */
+#projet > div:last-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-top: 1px solid var(--gris-clair);
+    margin-top: 1rem;
+}
+
+#projet > div:last-child div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#projet h5 {
+    margin: 0;
+    color: var(--gris-tres-fonce);
+    font-size: 0.9rem;
+}
+
+#projet i {
+    color: var(--violet-doux);
+    font-size: 1.1rem;
+}
+
+/* Responsive : 2 colonnes sur tablette, 1 sur mobile */
+@media (max-width: 992px) {
+    #realisations {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    #realisations {
+        grid-template-columns: 1fr;
+    }
+} 
